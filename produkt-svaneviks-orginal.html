@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Svaneviks Orginal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1b1f1b;
+      color: #e2e2e2;
+      padding: 2rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #4caf50;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      cursor: pointer;
+      margin-top: 1rem;
+      border-radius: 4px;
+    }
+    a {
+      color: #cddc39;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Svaneviks Orginal</h1>
+  <img src="Fiskestang1.png" alt="Fiskestang">
+  <p><strong>Pris:</strong> kr 399,-</p>
+  <p>En lett og fleksibel fiskestang – perfekt for ørretfiske i både elv og innsjø.</p>
+  <button onclick="leggIKurv('Svaneviks Orginal', 399)">Legg i kurv</button>
+
+  <br>
+  <a href="index.html">← Tilbake til forsiden</a>
+
+  <script>
+    let total = 0;
+    function leggIKurv(produkt, pris) {
+      alert(produkt + " lagt til i kurven (funksjonen må kobles til hovedside for full handlekurv).");
+      total += pris;
+    }
+  </script>
+
+</body>
+</html>
